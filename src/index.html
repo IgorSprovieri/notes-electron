@@ -3,31 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <title>Notes</title>
-    <link rel="stylesheet" type="text/css" href="./globals.css" />
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <script type="text/javascript" src="./components/buttonLine.js"></script>
-    <script type="text/javascript" src="./components/noteLine.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/globals.css" />
+    <link rel="stylesheet" type="text/css" href="./css/note.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <script type="text/javascript" src="./index.js"></script>
   </head>
   <body>
-    <div class="options-container">
-      <div id="options" class="options-content-container">
-        <button onclick="onCreateLine({tag: 'input', variant: 'h1'})">
-          H1
-        </button>
-        <button onclick="onCreateLine({tag: 'input', variant: 'h2'})">
-          H2
-        </button>
-        <button onclick="onCreateLine({tag: 'input', variant: 'h3'})">
-          H3
-        </button>
-        <button onclick="onCreateLine({tag: 'textarea', variant: 'p'})">
-          P
-        </button>
+    <div id="notes" class="notes-container"></div>
+    <div class="note-container">
+      <div class="options-container">
+        <div id="options" class="options-content-container">
+          <button onclick="onCreateLine({tag: 'input', variant: 'h1'})">
+            H1
+          </button>
+          <button onclick="onCreateLine({tag: 'input', variant: 'h2'})">
+            H2
+          </button>
+          <button onclick="onCreateLine({tag: 'input', variant: 'h3'})">
+            H3
+          </button>
+          <button onclick="onCreateLine({tag: 'textarea', variant: 'p'})">
+            P
+          </button>
+        </div>
       </div>
-    </div>
-    <div id="note" class="note">
-      <button onclick="onShowOptions()">+</button>
+      <div id="note" class="note">
+        <button onclick="onShowOptions()">+</button>
+      </div>
     </div>
   </body>
 </html>

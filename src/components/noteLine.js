@@ -1,4 +1,4 @@
-const createNoteLine = ({ data, index, lines }) => {
+const createNoteLine = ({ data, index, lines, saveOnDB }) => {
   const { tag, variant, fontFamily, text } = data;
 
   const element = document.createElement(tag);
@@ -25,5 +25,9 @@ const createNoteLine = ({ data, index, lines }) => {
     }
   };
 
+  element.onchange = () => saveOnDB();
+
   return element;
 };
+
+module.exports = { createNoteLine };

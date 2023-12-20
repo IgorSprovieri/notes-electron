@@ -6,3 +6,5 @@ const createButtonLine = () => {
 
   return buttonElement;
 };
+
+module.exports = { createButtonLine };

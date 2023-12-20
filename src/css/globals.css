@@ -1,5 +1,7 @@
 body {
+  display: flex;
   margin: 0;
+  padding: 0;
   height: 100dvh;
   width: 100dvw;
   overflow-y: hidden;

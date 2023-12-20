@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  height: 100dvh;
+  width: 100dvw;
+  overflow-y: hidden;
+}
+
+button {
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
